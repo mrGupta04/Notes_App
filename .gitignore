@@ -1,0 +1,13 @@
+# Node/Express backend
+backend/node_modules/
+backend/.env
+
+# React client
+client/node_modules/
+client/dist/
+client/build/
+client/.env
+
+# General
+.vscode/
+.DS_Store
