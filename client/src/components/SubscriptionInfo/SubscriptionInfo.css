@@ -1,0 +1,89 @@
+.subscription-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.plan-details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.plan-badge {
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.plan-badge.free {
+  background: linear-gradient(135deg, var(--secondary), var(--gray));
+}
+
+.plan-badge.pro {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+}
+
+.plan-stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.plan-name {
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.notes-count {
+  font-size: 0.9rem;
+  color: var(--secondary);
+}
+
+.notes-count.pro {
+  color: var(--success);
+  font-weight: 500;
+}
+
+.pro-badge {
+  background-color: #f0fdf4;
+  color: var(--success);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid #bbf7d0;
+}
+
+.limit-warning {
+  background-color: #fffbeb;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.limit-warning p {
+  color: #d97706;
+  margin: 0 0 1rem 0;
+}
+
+.limit-warning .btn {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .subscription-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .plan-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

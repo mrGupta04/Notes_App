@@ -1,0 +1,43 @@
+.note-form-container {
+  margin-bottom: 2rem;
+}
+
+.note-form-container h2 {
+  margin-bottom: 1.5rem;
+  color: var(--dark);
+  font-weight: 600;
+}
+
+.note-form {
+  margin-top: 1.5rem;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.limit-reached {
+  text-align: center;
+  padding: 2rem;
+}
+
+.limit-reached h3 {
+  color: var(--warning);
+  margin-bottom: 1rem;
+}
+
+.limit-reached p {
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 640px) {
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .form-actions button {
+    width: 100%;
+  }
+}
